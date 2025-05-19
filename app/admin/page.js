@@ -93,7 +93,7 @@ export default function UsersPage() {
 
   return (
     <ProtectedRoute allowedRoles={["admin"]}>
-      <div className="px-4 max-w-6xl mx-auto pt-10">
+      <div className="px-4 max-w-6xl mx-auto pt-10 min-h-screen">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-800">All Users</h2>
           <button

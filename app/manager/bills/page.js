@@ -117,7 +117,9 @@ export default function BillsPage() {
 
 
     return (
-        <ProtectedRoute allowedRoles={["manager"]}> <div className="px-4 max-w-6xl mx-auto pt-10"> <h2 className="text-2xl font-semibold mb-6 text-center">Manage Bills</h2>
+        <ProtectedRoute allowedRoles={["manager"]}> 
+        <div className="px-4 max-w-6xl mx-auto pt-10 min-h-screen"> 
+            <h2 className="text-2xl font-semibold mb-6 text-center">Manage Bills</h2>
             <div className="flex justify-between items-center">
                 <div className="mb-6">
                     <label className="block text-sm font-medium mb-1">Select Month</label>
