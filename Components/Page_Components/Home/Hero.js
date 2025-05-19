@@ -54,6 +54,8 @@ export default function Hero({reload_status, setReload_status, setStatus}) {
     fetchData();
   }, [axiosPublic, reload_status]);
 
+  const meal_rate = (food_cost/meals).toFixed(1);
+
   
   return (
     <section className="pt-20 text-center">
@@ -65,7 +67,7 @@ export default function Hero({reload_status, setReload_status, setStatus}) {
             <h3 className="text-2xl font-medium">Your Meals</h3>
           </div>
           <div className="shadow-xl py-14 rounded-xl space-y-3 bg-white">
-            <h2 className="text-5xl font-bold text-[#4CAF50] animate-pulse">{(food_cost/meals).toFixed(1)}</h2>
+            <h2 className="text-5xl font-bold text-[#4CAF50] animate-pulse">{meal_rate ? meal_rate : 0}</h2>
             <h3 className="text-2xl font-medium">Current Meal Rate</h3>
           </div>
           <div className="shadow-xl py-14 rounded-xl space-y-3 bg-white">

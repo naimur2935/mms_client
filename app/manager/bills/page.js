@@ -33,7 +33,7 @@ export default function BillsPage() {
 
     const fetchUsers = async () => {
         const res = await axiosPublic.get("/users");
-        setUsers(res.data);
+        setUsers(res.data?.filter(u => u?.role !== "admin"));
     };
 
     const fetchBills = async (month) => {

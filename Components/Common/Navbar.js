@@ -53,10 +53,10 @@ export default function Navbar() {
                                 All Costs
                             </button>
                             <button
-                                onClick={() => router.push("/manager/users")}
-                                className={`text-white hover:border-b-2 transition-colors duration-150 ${path === "/manager/users" && "border-b-2"}`}
+                                onClick={() => router.push("/manager/bills")}
+                                className={`text-white hover:border-b-2 transition-colors duration-150 ${path === "/manager/bills" && "border-b-2"}`}
                             >
-                                All Users
+                                All Bills
                             </button>
                             </>
                         )}
