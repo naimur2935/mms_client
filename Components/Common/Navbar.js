@@ -32,7 +32,7 @@ export default function Navbar() {
                     <div className="space-x-8 flex items-center text-sm sm:text-base text-gray-700 font-medium">
                         <button
                                 onClick={() => router.push("/")}
-                                className={`text-white hover:border-b-2 transition-colors duration-150 ${path === "/" && "border-b-2"}`}
+                                className={`text-white hover:border-b-2 transition-colors duration-150 ${path === "/" && "border-b-2"} ${user || "hidden"}`}
                             >
                                 Home
                             </button>

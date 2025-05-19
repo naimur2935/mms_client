@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/Components/Common/Navbar";
 import QueryProvider from "../providers/QueryProvider"
 import { AuthProvider } from "@/providers/AuthProvider";
+import Footer from "@/Components/Common/Footer";
 
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           <QueryProvider>
             <Navbar />
             {children}
+            <Footer />
           </QueryProvider>
         </AuthProvider>
       </body>

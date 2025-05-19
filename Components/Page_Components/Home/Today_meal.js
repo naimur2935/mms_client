@@ -54,7 +54,7 @@ export default function Today_meal({setReload_status}) {
     };
 
     return (
-        <section className="mt-20 p-6 md:p-10 shadow-xl rounded-xl bg-white text-center">
+        <section className="my-20 p-6 md:p-10 shadow-xl rounded-xl bg-white text-center">
             <h1 className="text-3xl md:text-4xl text-[#FF9800] font-bold underline mb-8">Add Tomorrow Meals</h1>
 
             <form
